@@ -3,7 +3,8 @@ package hospital.enums;
 public enum AreaOfExpertize {
     SUR ("Surgeon"),
     DER("Dermatologist"),
-    ONC("Oncologist");
+    ONC("Oncologist"),
+    EMG("Emergencist");
 
     private final String speciality;
 

@@ -25,4 +25,8 @@ public class Nurse<NurseCredential> extends Person implements Treatable {
                 "\nCredential: " + getCredential() + "\n";
     }
 
+    @Override
+    public void treatment() {
+
+    }
 }
