@@ -35,12 +35,19 @@ public class Hospital {
 
         //Creating doctors and nurses entities
         Doctor doctor1 = new Doctor("Mariano", 26, 1, AreaOfExpertize.ONC);
-        Doctor doctor2 = new Doctor("Andrew", 32, 2, AreaOfExpertize.DER);
-        Doctor doctor3 = new Doctor("Jose", 30, 3, AreaOfExpertize.SUR);
-        LOGGER.debug(doctor2);
+        LOGGER.debug(doctor1.printInfo());
 
-        Nurse nurse1 = new Nurse("Sofia", 23, "Cerfoglio");
-        Nurse nurse2 = new Nurse("Martina", 34, "Vazquez");
+        Doctor doctor2 = new Doctor("Andrew", 32, 2, AreaOfExpertize.DER);
+        LOGGER.debug(doctor2.printInfo());
+
+        Doctor doctor3 = new Doctor("Jose", 30, 3, AreaOfExpertize.SUR);
+        LOGGER.debug(doctor3.printInfo());
+
+
+        Nurse nurse1 = new Nurse("Sofia", 23, "Vazquez");
+        nurse1.setCredential(123456789);
+        LOGGER.debug(nurse1.printInfo());
+
 
 
 

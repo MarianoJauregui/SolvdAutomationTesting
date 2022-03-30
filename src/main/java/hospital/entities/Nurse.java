@@ -21,7 +21,7 @@ public class Nurse<NurseCredential> extends Person implements Treatable {
     @Override
     public String printInfo(){
         return "\nNurse info: " +
-                super.toString() +
+                super.printInfo() +
                 "\nCredential: " + getCredential() + "\n";
     }
 

@@ -52,7 +52,6 @@ public abstract class Person {
 
     public String printInfo(){
         return "\nID: " + id +
-                "\nName: " + name +
-                "\nLast name: " + lastName;
+                "\nName: " + name;
     }
 }

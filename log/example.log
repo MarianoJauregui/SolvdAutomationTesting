@@ -6,3 +6,70 @@
 2022-03-29 10:23:35,299 DEBUG o.e.Hospital [main] org.example.Hospital@37654521
 2022-03-29 10:23:35,306 DEBUG o.e.Hospital [main] It is working!
 2022-03-29 10:23:35,310 DEBUG o.e.Hospital [main] hospital.entities.Doctor@73700b80
+2022-03-30 14:47:26,077 DEBUG o.e.Hospital [main] org.example.Hospital@37654521
+2022-03-30 14:47:26,092 DEBUG o.e.Hospital [main] It is working!
+2022-03-30 14:47:26,111 DEBUG o.e.Hospital [main] 
+Doctor info: hospital.entities.Doctor@73700b80
+Area of expertize: ONC
+
+2022-03-30 14:49:23,094 DEBUG o.e.Hospital [main] org.example.Hospital@6bedbc4d
+2022-03-30 14:49:23,111 DEBUG o.e.Hospital [main] It is working!
+2022-03-30 14:49:23,138 DEBUG o.e.Hospital [main] 
+Doctor info: 
+ID: 1
+Name: Mariano
+Last name: null
+Area of expertize: ONC
+
+2022-03-30 14:51:48,801 DEBUG o.e.Hospital [main] org.example.Hospital@6bedbc4d
+2022-03-30 14:51:48,819 DEBUG o.e.Hospital [main] It is working!
+2022-03-30 14:51:48,841 DEBUG o.e.Hospital [main] 
+Doctor info: 
+ID: 1
+Name: Mariano
+Area of expertize: ONC
+
+2022-03-30 14:51:48,845 DEBUG o.e.Hospital [main] 
+Doctor info: 
+ID: 2
+Name: Andrew
+Area of expertize: DER
+
+2022-03-30 14:51:48,846 DEBUG o.e.Hospital [main] 
+Doctor info: 
+ID: 3
+Name: Jose
+Area of expertize: SUR
+
+2022-03-30 14:51:48,868 DEBUG o.e.Hospital [main] 
+Nurse info: 
+ID: 0
+Name: Sofia
+Credential: null
+
+2022-03-30 14:54:39,246 DEBUG o.e.Hospital [main] org.example.Hospital@6bedbc4d
+2022-03-30 14:54:39,272 DEBUG o.e.Hospital [main] It is working!
+2022-03-30 14:54:39,288 DEBUG o.e.Hospital [main] 
+Doctor info: 
+ID: 1
+Name: Mariano
+Area of expertize: ONC
+
+2022-03-30 14:54:39,289 DEBUG o.e.Hospital [main] 
+Doctor info: 
+ID: 2
+Name: Andrew
+Area of expertize: DER
+
+2022-03-30 14:54:39,290 DEBUG o.e.Hospital [main] 
+Doctor info: 
+ID: 3
+Name: Jose
+Area of expertize: SUR
+
+2022-03-30 14:54:39,291 DEBUG o.e.Hospital [main] 
+Nurse info: 
+ID: 0
+Name: Sofia
+Credential: 123456789
+
