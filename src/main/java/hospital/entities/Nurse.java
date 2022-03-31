@@ -24,9 +24,4 @@ public class Nurse<NurseCredential> extends Person implements Treatable {
                 super.printInfo() +
                 "\nCredential: " + getCredential() + "\n";
     }
-
-    @Override
-    public void treatment() {
-
-    }
 }

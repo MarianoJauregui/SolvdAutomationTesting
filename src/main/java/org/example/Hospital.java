@@ -1,59 +1,50 @@
 package org.example;
 
+import hospital.areas.GeneralHospital;
 import hospital.entities.Doctor;
 import hospital.entities.Nurse;
+import hospital.entities.Patient;
 import hospital.enums.AreaOfExpertize;
+import hospital.generics.GenericsExample;
+import hospital.services.Appointment;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.Date;
 
 public class Hospital {
 
     private static final Logger LOGGER = LogManager.getLogger(Hospital.class);
 
-
-    private String name;
-    private String locationCity;
-    private String type;
-
-    //Constructors
-    public Hospital(String name) {
-        this.name = name;
-    }
-
-    public Hospital(String name, String locationCity, String type){
-        this.name = name;
-        this.locationCity = locationCity;
-        this.type = type;
-    }
-
     public static void main(String[] args) {
 
-        Hospital hospital1 = new Hospital("Blas Dubarry", "Mercedes", "Private");
-
-        LOGGER.debug(hospital1);
-        LOGGER.debug("It is working!");
+        GeneralHospital hospital = new GeneralHospital("Blas Dubarry", "Mercedes", "Private");
 
         //Creating doctors and nurses entities
         Doctor doctor1 = new Doctor("Mariano", 26, 1, AreaOfExpertize.ONC);
-        LOGGER.debug(doctor1.printInfo());
-
         Doctor doctor2 = new Doctor("Andrew", 32, 2, AreaOfExpertize.DER);
-        LOGGER.debug(doctor2.printInfo());
-
-        Doctor doctor3 = new Doctor("Jose", 30, 3, AreaOfExpertize.SUR);
-        LOGGER.debug(doctor3.printInfo());
-
 
         Nurse nurse1 = new Nurse("Sofia", 23, "Vazquez");
         nurse1.setCredential(123456789);
-        LOGGER.debug(nurse1.printInfo());
+
+        //Adding doctors and Nurses
+        hospital.addDoctor(doctor1);
+        hospital.addDoctor(doctor2);
+        hospital.addNurse(nurse1);
+
+        //Adding patients
+        Patient patient1 = new Patient("Martin", 26, "Marinez", "OSDE");
+
+        //Appointments
+        Appointment appointmentForPatient1 = new Appointment(hospital ,doctor1, patient1, 25000, new Date());
 
 
 
+        //Generics
+        GenericsExample<String, Integer> FirstGenericsExample = new GenericsExample<String, Integer>();
 
-        //REPLACE WITH LOGGER
-        //System.out.println(doctor1.equals(nurse1)); //false
-        //System.out.println(doctor1.equals(doctor1)); //true, they are the same exact object
+        // EmployeesList<Employee> employeesList = new EmployeesList<Employee>();
+
 
     }
 }

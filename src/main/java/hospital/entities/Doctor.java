@@ -39,8 +39,4 @@ public class Doctor<S> extends Person implements Treatable {
                 "\nArea of expertize: " + getAreaOfExpertize() + "\n";
     }
 
-    @Override
-    public void treatment() {
-
-    }
 }

@@ -8,6 +8,6 @@ public class AppTest {
     private static final Logger LOGGER = LogManager.getLogger(AppTest.class);
 
     public static void main(String[] args) {
-        LOGGER.debug("Hello");
+
     }
 }

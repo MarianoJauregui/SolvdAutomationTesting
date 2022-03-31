@@ -1,5 +1,6 @@
 package hospital.services;
 
+import hospital.areas.GeneralHospital;
 import hospital.entities.Doctor;
 import hospital.entities.Patient;
 import org.example.Hospital;
@@ -55,8 +56,7 @@ public class Appointment {
     }
 
 
-    public Appointment(Hospital hospital, Doctor doctor, Patient patient, int cost, Date date){
-        this.hospital = hospital;
+    public Appointment(GeneralHospital hospital, Doctor doctor, Patient patient, int cost, Date date){
         this.doctor = doctor;
         this.patient = patient;
         this.cost = cost;
