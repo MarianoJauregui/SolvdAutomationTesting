@@ -3,22 +3,21 @@ package hospital.areas;
 import hospital.entities.Doctor;
 import hospital.entities.Nurse;
 
-import javax.print.Doc;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GeneralHospital {
+public class Hospital {
     private String name;
     private String locationCity;
     private String type;
     private List<Doctor> doctorList = new ArrayList<>();
     private List<Nurse> nurseList = new ArrayList<>();
 
-    public GeneralHospital(String name) {
+    public Hospital(String name) {
         this.name = name;
     }
 
-    public GeneralHospital(String name, String locationCity, String type){
+    public Hospital(String name, String locationCity, String type){
         this.name = name;
         this.locationCity = locationCity;
         this.type = type;

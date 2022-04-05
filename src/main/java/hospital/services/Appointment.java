@@ -1,26 +1,26 @@
 package hospital.services;
 
-import hospital.areas.GeneralHospital;
 import hospital.entities.Doctor;
 import hospital.entities.Patient;
-import org.example.Hospital;
+import hospital.exceptions.HealthInsuranceNotFound;
+import org.example.HospitalMain;
 
 import java.util.Date;
 
-public class Appointment {
+public class Appointment implements SaveAppointment{
 
-    private Hospital hospital;
+    private HospitalMain hospitalMain;
     private Doctor doctor;
     private Patient patient;
     private int cost;
     private Date date;
 
-    public Hospital getHospital() {
-        return hospital;
+    public HospitalMain getHospital() {
+        return hospitalMain;
     }
 
-    public void setHospital(Hospital hospital) {
-        this.hospital = hospital;
+    public void setHospital(HospitalMain hospitalMain) {
+        this.hospitalMain = hospitalMain;
     }
 
     public Doctor getDoctor() {
@@ -56,7 +56,7 @@ public class Appointment {
     }
 
 
-    public Appointment(GeneralHospital hospital, Doctor doctor, Patient patient, int cost, Date date){
+    public Appointment(Doctor doctor, Patient patient, int cost, Date date){
         this.doctor = doctor;
         this.patient = patient;
         this.cost = cost;
@@ -65,7 +65,16 @@ public class Appointment {
 
 
     public String printAppointmentInfo(){
-        return "Hello, " + patient +". Your appointment is on "
-                + date + " with " + doctor + " and it will cost $" + cost;
+        return "Hello, " + patient.getName() +". Your appointment is on "
+                + date + " with " + doctor.getName() + " and it will cost $" + cost;
+    }
+
+    @Override
+    public Appointment saveAppointment(HospitalMain hospitalMain, Date date, Doctor doctor, Patient patient, int cost) throws HealthInsuranceNotFound {
+        if(patient.getInsuranceCompany().isEmpty()){
+            throw new HealthInsuranceNotFound("The patient does not have a health insurance");
+        }
+        Appointment appointment = new Appointment(doctor, patient, cost, date);
+        return appointment;
     }
 }

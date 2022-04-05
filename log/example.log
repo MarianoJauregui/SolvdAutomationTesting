@@ -1,18 +1,18 @@
 2022-03-23 16:27:20,396 DEBUG o.e.AppTest [main] Hello
-2022-03-29 10:21:56,100 DEBUG o.e.Hospital [main] org.example.Hospital@5f9b2141
-2022-03-29 10:21:56,110 DEBUG o.e.Hospital [main] hospital.entities.Doctor@3c73951
-2022-03-29 10:22:40,915 DEBUG o.e.Hospital [main] org.example.Hospital@37654521
-2022-03-29 10:22:40,923 DEBUG o.e.Hospital [main] hospital.entities.Doctor@3c73951
-2022-03-29 10:23:35,299 DEBUG o.e.Hospital [main] org.example.Hospital@37654521
+2022-03-29 10:21:56,100 DEBUG o.e.Hospital [main] org.example.HospitalMain@5f9b2141
+2022-03-29 10:21:56,110 DEBUG o.e.Hospital [main] hospitalMain.entities.Doctor@3c73951
+2022-03-29 10:22:40,915 DEBUG o.e.Hospital [main] org.example.HospitalMain@37654521
+2022-03-29 10:22:40,923 DEBUG o.e.Hospital [main] hospitalMain.entities.Doctor@3c73951
+2022-03-29 10:23:35,299 DEBUG o.e.Hospital [main] org.example.HospitalMain@37654521
 2022-03-29 10:23:35,306 DEBUG o.e.Hospital [main] It is working!
-2022-03-29 10:23:35,310 DEBUG o.e.Hospital [main] hospital.entities.Doctor@73700b80
-2022-03-30 14:47:26,077 DEBUG o.e.Hospital [main] org.example.Hospital@37654521
+2022-03-29 10:23:35,310 DEBUG o.e.Hospital [main] hospitalMain.entities.Doctor@73700b80
+2022-03-30 14:47:26,077 DEBUG o.e.Hospital [main] org.example.HospitalMain@37654521
 2022-03-30 14:47:26,092 DEBUG o.e.Hospital [main] It is working!
 2022-03-30 14:47:26,111 DEBUG o.e.Hospital [main] 
-Doctor info: hospital.entities.Doctor@73700b80
+Doctor info: hospitalMain.entities.Doctor@73700b80
 Area of expertize: ONC
 
-2022-03-30 14:49:23,094 DEBUG o.e.Hospital [main] org.example.Hospital@6bedbc4d
+2022-03-30 14:49:23,094 DEBUG o.e.Hospital [main] org.example.HospitalMain@6bedbc4d
 2022-03-30 14:49:23,111 DEBUG o.e.Hospital [main] It is working!
 2022-03-30 14:49:23,138 DEBUG o.e.Hospital [main] 
 Doctor info: 
@@ -21,7 +21,7 @@ Name: Mariano
 Last name: null
 Area of expertize: ONC
 
-2022-03-30 14:51:48,801 DEBUG o.e.Hospital [main] org.example.Hospital@6bedbc4d
+2022-03-30 14:51:48,801 DEBUG o.e.Hospital [main] org.example.HospitalMain@6bedbc4d
 2022-03-30 14:51:48,819 DEBUG o.e.Hospital [main] It is working!
 2022-03-30 14:51:48,841 DEBUG o.e.Hospital [main] 
 Doctor info: 
@@ -47,7 +47,7 @@ ID: 0
 Name: Sofia
 Credential: null
 
-2022-03-30 14:54:39,246 DEBUG o.e.Hospital [main] org.example.Hospital@6bedbc4d
+2022-03-30 14:54:39,246 DEBUG o.e.Hospital [main] org.example.HospitalMain@6bedbc4d
 2022-03-30 14:54:39,272 DEBUG o.e.Hospital [main] It is working!
 2022-03-30 14:54:39,288 DEBUG o.e.Hospital [main] 
 Doctor info: 
