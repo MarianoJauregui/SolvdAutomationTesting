@@ -5,9 +5,9 @@ import hospital.entities.Doctor;
 import hospital.entities.Nurse;
 import hospital.entities.Patient;
 import hospital.enums.AreaOfExpertize;
+import hospital.exceptions.EmployeeNotFound;
 import hospital.generics.GenericsExample;
 import hospital.services.Appointment;
-import hospital.services.SaveAppointment;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -19,7 +19,7 @@ public class HospitalMain {
 
     public static void main(String[] args) {
 
-        final SaveAppointment appointment = new SaveAppointment();
+        //final AppointmentService appointment = new AppointmentService();
 
         Hospital hospital1 = new Hospital("Blas Dubarry", "Mercedes", "Private");
 
@@ -44,7 +44,9 @@ public class HospitalMain {
 
         //Appointment not found
         try{
-            Appointment appointmentForPatient2 =  appointmentForPatient1(hospital1, doctor2,);
+            hospital1.removeDoctor(doctor2);
+        } catch (EmployeeNotFound e){
+            LOGGER.error(e.getMessage());
         }
 
         //Generics

@@ -7,6 +7,6 @@ import org.example.HospitalMain;
 
 import java.util.Date;
 
-public interface SaveAppointment {
+public interface ISaveAppointment {
     Appointment saveAppointment(HospitalMain hospitalMain, Date date, Doctor doctor, Patient patient, int cost) throws HealthInsuranceNotFound;
 }
