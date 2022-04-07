@@ -35,7 +35,7 @@ public class HospitalMain {
         hospital1.addNurse(nurse1);
 
         //Adding patients
-        Patient patient1 = new Patient("Martin", 26, "Marinez", "OSDE");
+        Patient patient1 = new Patient("Martin", 26, "Martinez", "OSDE");
 
 
         //Appointments
