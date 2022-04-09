@@ -1,17 +1,20 @@
 package org.example;
 
+import customLinkedList.LinkedList;
 import hospital.areas.Hospital;
 import hospital.entities.Doctor;
 import hospital.entities.Nurse;
 import hospital.entities.Patient;
 import hospital.enums.AreaOfExpertize;
 import hospital.exceptions.EmployeeNotFound;
-import hospital.generics.GenericsExample;
 import hospital.services.Appointment;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.Date;
+
+import static customLinkedList.LinkedList.add;
+import static customLinkedList.LinkedList.printLinkedList;
 
 public class HospitalMain {
 
@@ -49,10 +52,17 @@ public class HospitalMain {
             LOGGER.error(e.getMessage());
         }
 
-        //Generics
-        GenericsExample<String, Integer> FirstGenericsExample = new GenericsExample<String, Integer>();
+        //Custom LinkedList
+        LinkedList list = new LinkedList();
 
-
+        //Insertion of data
+        list = add(list, 1);
+        list = add(list, 2);
+        list = add(list, 3);
+        list = add(list, 4);
+        list = add(list, 5);
+        //Quiero imprimirlo por Logger, preguntar a José después
+        printLinkedList(list);
 
     }
 }
