@@ -16,7 +16,7 @@ public class NumberOfWords {
     public static void main(String[] args) {
         String text = "";
         try {
-            text = FileUtils.readFileToString(new File("src/main/java/apacheUtils/SolvdText.txt"));
+            text = FileUtils.readFileToString(new File("C:/Users/PC/IdeaProjects/Test/src/resources"));
         } catch (IOException e) {
             LOGGER.error(e);
         }
@@ -29,7 +29,7 @@ public class NumberOfWords {
             } else uniqueWord.put(word, 1);
         }
         try {
-            FileUtils.writeStringToFile(new File("src/main/java/apacheUtils/SolvdTextCount.txt"),
+            FileUtils.writeStringToFile(new File("C:/Users/PC/IdeaProjects//Test/src/resources/uniqueWords.txt"),
                     "Unique words: " + uniqueWord.size() + "\n" + uniqueWord.toString());
         } catch (IOException e) {
             LOGGER.error(e);

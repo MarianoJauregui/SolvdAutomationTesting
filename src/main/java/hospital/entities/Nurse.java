@@ -1,8 +1,6 @@
 package hospital.entities;
 
-import hospital.treatment.Treatable;
-
-public class Nurse<NurseCredential> extends Person implements Treatable {
+public class Nurse<NurseCredential> extends Person {
 
     private NurseCredential credential;
 

@@ -86,3 +86,42 @@ Credential: 123456789
 2022-04-09 09:46:47,798 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Sat Apr 09 09:46:47 ART 2022 with Mariano and it will cost $25000
 2022-04-09 09:46:47,811 INFO o.e.HospitalMain [main] customLinkedList.LinkedList@55634720
 2022-04-09 09:48:11,648 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Sat Apr 09 09:48:11 ART 2022 with Mariano and it will cost $25000
+2022-04-12 13:40:59,623 ERROR a.NumberOfWords [main] java.io.FileNotFoundException: src\main\resources\SolvdText.txt (El sistema no puede encontrar la ruta especificada)
+2022-04-12 13:42:31,169 ERROR a.NumberOfWords [main] java.io.FileNotFoundException: C:\Users\PC\IdeaProjects\Test\src\resources (Acceso denegado)
+2022-04-12 13:44:26,499 ERROR a.NumberOfWords [main] java.io.FileNotFoundException: C:\Users\PC\IdeaProjects\Test\src\resources (Acceso denegado)
+2022-04-12 13:46:10,776 ERROR a.NumberOfWords [main] java.io.FileNotFoundException: C:\Users\PC\IdeaProjects\Test\src\resources (Acceso denegado)
+2022-04-12 14:02:45,729 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Tue Apr 12 14:02:45 ART 2022 with Mariano and it will cost $25000
+2022-04-12 14:03:24,962 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Tue Apr 12 14:03:24 ART 2022 with Mariano and it will cost $25000
+2022-04-12 14:07:27,321 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Tue Apr 12 14:07:27 ART 2022 with Mariano and it will cost $25000
+2022-04-12 14:07:27,332 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 1
+Name: Mariano
+Area of expertize: ONC
+
+2022-04-12 14:08:00,494 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Tue Apr 12 14:08:00 ART 2022 with Mariano and it will cost $25000
+2022-04-12 14:08:00,500 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 1
+Name: Mariano
+Area of expertize: ONC
+
+2022-04-12 14:08:00,501 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 2
+Name: Andrew
+Area of expertize: DER
+
+2022-04-12 14:23:07,933 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Tue Apr 12 14:23:07 ART 2022 with Mariano and it will cost $25000
+2022-04-12 14:23:07,953 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 1
+Name: Mariano
+Area of expertize: ONC
+
+2022-04-12 14:23:07,954 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 2
+Name: Andrew
+Area of expertize: DER
+

@@ -2,14 +2,12 @@ package hospital.services;
 
 import hospital.entities.Doctor;
 import hospital.entities.Patient;
-import hospital.exceptions.HealthInsuranceNotFound;
 import org.example.HospitalMain;
 
 import java.util.Date;
 
 public class Appointment{
 
-    private HospitalMain hospitalMain;
     private Doctor doctor;
     private Patient patient;
     private int cost;
@@ -24,15 +22,6 @@ public class Appointment{
         this.patient = patient;
         this.cost = cost;
         this.date = date;
-    }
-
-
-    public HospitalMain getHospital() {
-        return hospitalMain;
-    }
-
-    public void setHospital(HospitalMain hospitalMain) {
-        this.hospitalMain = hospitalMain;
     }
 
     public Doctor getDoctor() {

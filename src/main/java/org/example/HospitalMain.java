@@ -7,7 +7,10 @@ import hospital.entities.Nurse;
 import hospital.entities.Patient;
 import hospital.enums.AreaOfExpertize;
 import hospital.exceptions.EmployeeNotFound;
+import hospital.exceptions.HealthInsuranceNotFound;
+import hospital.lambda.printInfo;
 import hospital.services.Appointment;
+import hospital.services.AppointmentService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -22,9 +25,10 @@ public class HospitalMain {
 
     public static void main(String[] args) {
 
-        //final AppointmentService appointment = new AppointmentService();
+        final AppointmentService appointment = new AppointmentService();
 
         Hospital hospital1 = new Hospital("Blas Dubarry", "Mercedes", "Private");
+        LOGGER.info(hospital1.toString());
 
         //Creating doctors and nurses entities
         Doctor doctor1 = new Doctor("Mariano", 26, 1, AreaOfExpertize.ONC);
@@ -39,13 +43,20 @@ public class HospitalMain {
 
         //Adding patients
         Patient patient1 = new Patient("Martin", 26, "Martinez", "OSDE");
-
+        Patient patient2 = new Patient("Juan", 35, "González", "IOMA");
 
         //Appointments
         Appointment appointmentForPatient1 = new Appointment(doctor1, patient1, 25000, new Date());
         LOGGER.info(appointmentForPatient1.printAppointmentInfo());
 
-        //Appointment not found
+        //HealthInsuranceNotFound
+        try{
+            Appointment appointment3 = appointment.saveAppointment(hospital1, new Date(), doctor1, patient1, 35000);
+        } catch (HealthInsuranceNotFound e) {
+            LOGGER.error(e);
+        }
+
+        //Removing doctor from Hospital
         try{
             hospital1.removeDoctor(doctor2);
         } catch (EmployeeNotFound e){
@@ -63,6 +74,12 @@ public class HospitalMain {
         list = add(list, 5);
         //Quiero imprimirlo por Logger, preguntar a José después
         printLinkedList(list);
+
+        //Functional Interface implementation
+        printInfo doctorInfo = () -> LOGGER.info(doctor1.printInfo());
+        doctorInfo.print();
+        printInfo nurseInfo = () -> LOGGER.info(doctor2.printInfo());
+        nurseInfo.print();
 
     }
 }

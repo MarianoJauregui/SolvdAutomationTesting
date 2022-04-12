@@ -2,9 +2,9 @@
 package hospital.entities;
 
 import hospital.enums.AreaOfExpertize;
-import hospital.treatment.Treatable;
 
-public class Doctor<S> extends Person implements Treatable {
+
+public class Doctor<S> extends Person {
 
     private S salary;
     private AreaOfExpertize areaOfExpertize;
