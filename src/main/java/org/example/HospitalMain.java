@@ -3,12 +3,16 @@ package org.example;
 import customLinkedList.LinkedList;
 import hospital.areas.Hospital;
 import hospital.entities.Doctor;
+import hospital.entities.Employee;
 import hospital.entities.Nurse;
 import hospital.entities.Patient;
 import hospital.enums.AreaOfExpertize;
 import hospital.exceptions.EmployeeNotFound;
 import hospital.exceptions.HealthInsuranceNotFound;
-import hospital.lambda.printInfo;
+import hospital.exceptions.MedicalRecordNotFound;
+import hospital.lambda.Addable;
+import hospital.lambda.Database;
+import hospital.lambda.Printable;
 import hospital.services.Appointment;
 import hospital.services.AppointmentService;
 import org.apache.logging.log4j.LogManager;
@@ -42,8 +46,9 @@ public class HospitalMain {
         hospital1.addNurse(nurse1);
 
         //Adding patients
-        Patient patient1 = new Patient("Martin", 26, "Martinez", "OSDE");
-        Patient patient2 = new Patient("Juan", 35, "González", "IOMA");
+        Patient patient1 = new Patient("Martin", 26, "Martinez", "OSDE", true);
+        Patient patient2 = new Patient("Juan", 35, "González", "IOMA", false);
+
 
         //Appointments
         Appointment appointmentForPatient1 = new Appointment(doctor1, patient1, 25000, new Date());
@@ -63,23 +68,36 @@ public class HospitalMain {
             LOGGER.error(e.getMessage());
         }
 
+        //MedicalRecordNotFound
+        try{
+            patient2.getMedicalRecord();
+        } catch (MedicalRecordNotFound e) {
+            LOGGER.error(e.getMessage());
+        }
+
         //Custom LinkedList
         LinkedList list = new LinkedList();
-
         //Insertion of data
         list = add(list, 1);
         list = add(list, 2);
         list = add(list, 3);
         list = add(list, 4);
         list = add(list, 5);
-        //Quiero imprimirlo por Logger, preguntar a José después
         printLinkedList(list);
 
+
         //Functional Interface implementation
-        printInfo doctorInfo = () -> LOGGER.info(doctor1.printInfo());
+        Printable doctorInfo = () -> LOGGER.info(doctor1.printInfo());
         doctorInfo.print();
-        printInfo nurseInfo = () -> LOGGER.info(doctor2.printInfo());
+        Printable nurseInfo = () -> LOGGER.info(doctor2.printInfo());
         nurseInfo.print();
+
+        Addable addition = (a, b) -> (a + b);
+        int result = addition.addition(20, 20);
+        Addable abc = (a, b) -> {
+            int c = (a+b);
+            return c;
+        };
 
     }
 }

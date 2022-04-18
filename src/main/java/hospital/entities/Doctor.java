@@ -38,5 +38,4 @@ public class Doctor<S> extends Person {
                 super.printInfo() +
                 "\nArea of expertize: " + getAreaOfExpertize() + "\n";
     }
-
 }

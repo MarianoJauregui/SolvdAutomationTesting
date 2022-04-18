@@ -1,6 +1,6 @@
 package hospital.lambda;
 
 @FunctionalInterface
-public interface printInfo {
-    void print();
+public interface Workable {
+    void work();
 }

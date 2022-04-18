@@ -1,17 +1,17 @@
 package hospital.entities;
 
+import hospital.lambda.Workable;
+
 public abstract class Employee extends Person{
 
     private double salary;
-    private boolean isWorking;
 
     public Employee(String name, int age, String lastName) {
         super(name, age, lastName);
     }
-    public Employee(String name, int age, String lastName, double salary, boolean isWorking){
+    public Employee(String name, int age, String lastName, double salary){
         super(name, age, lastName);
         this.salary = salary;
-        this.isWorking = isWorking;
     }
 
     public double getSalary() {
@@ -22,13 +22,8 @@ public abstract class Employee extends Person{
         this.salary = salary;
     }
 
-    public boolean isWorking() {
-        return isWorking;
+    public void work(Workable work){
+        work.work();
     }
-
-    public void setWorking(boolean working) {
-        isWorking = working;
-    }
-
 
 }
