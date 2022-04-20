@@ -3,15 +3,13 @@ package org.example;
 import customLinkedList.LinkedList;
 import hospital.areas.Hospital;
 import hospital.entities.Doctor;
-import hospital.entities.Employee;
 import hospital.entities.Nurse;
 import hospital.entities.Patient;
 import hospital.enums.AreaOfExpertize;
 import hospital.exceptions.EmployeeNotFound;
 import hospital.exceptions.HealthInsuranceNotFound;
 import hospital.exceptions.MedicalRecordNotFound;
-import hospital.lambda.Addable;
-import hospital.lambda.Database;
+import hospital.generics.GenericInfoPrinter;
 import hospital.lambda.Printable;
 import hospital.services.Appointment;
 import hospital.services.AppointmentService;
@@ -37,6 +35,13 @@ public class HospitalMain {
         //Creating doctors and nurses entities
         Doctor doctor1 = new Doctor("Mariano", 26, 1, AreaOfExpertize.ONC);
         Doctor doctor2 = new Doctor("Andrew", 32, 2, AreaOfExpertize.DER);
+
+
+        doctor1.setSalary(20000);
+        doctor2.setAreaOfExpertize(AreaOfExpertize.ONC);
+        LOGGER.info(doctor1.equals(doctor2));
+
+
         Nurse nurse1 = new Nurse("Sofia", 23, "Vazquez");
         nurse1.setCredential(123456789);
 
@@ -44,6 +49,7 @@ public class HospitalMain {
         hospital1.addDoctor(doctor1);
         hospital1.addDoctor(doctor2);
         hospital1.addNurse(nurse1);
+        hospital1.getDoctorList();
 
         //Adding patients
         Patient patient1 = new Patient("Martin", 26, "Martinez", "OSDE", true);
@@ -85,19 +91,18 @@ public class HospitalMain {
         list = add(list, 5);
         printLinkedList(list);
 
+        //GenericPrinter
+        GenericInfoPrinter<Doctor> d1 = new GenericInfoPrinter<>(doctor1);
+        d1.print();
+        GenericInfoPrinter<Nurse> n1 = new GenericInfoPrinter<>(nurse1);
+        n1.print();
+
 
         //Functional Interface implementation
         Printable doctorInfo = () -> LOGGER.info(doctor1.printInfo());
         doctorInfo.print();
         Printable nurseInfo = () -> LOGGER.info(doctor2.printInfo());
         nurseInfo.print();
-
-        Addable addition = (a, b) -> (a + b);
-        int result = addition.addition(20, 20);
-        Addable abc = (a, b) -> {
-            int c = (a+b);
-            return c;
-        };
 
     }
 }

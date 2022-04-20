@@ -125,3 +125,91 @@ ID: 2
 Name: Andrew
 Area of expertize: DER
 
+2022-04-19 14:10:46,080 INFO o.e.HospitalMain [main] hospital.areas.Hospital@7c711375
+2022-04-19 14:10:46,089 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Tue Apr 19 14:10:46 ART 2022 with Mariano and it will cost $25000
+2022-04-19 14:10:46,107 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 1
+Name: Mariano
+Area of expertize: ONC
+
+2022-04-19 14:10:46,109 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 2
+Name: Andrew
+Area of expertize: DER
+
+2022-04-19 14:28:25,497 INFO o.e.HospitalMain [main] hospital.areas.Hospital@7c711375
+2022-04-19 14:28:25,507 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Tue Apr 19 14:28:25 ART 2022 with Mariano and it will cost $25000
+2022-04-19 14:28:25,516 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 1
+Name: Mariano
+Area of expertize: ONC
+
+2022-04-19 14:28:25,517 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 2
+Name: Andrew
+Area of expertize: DER
+
+2022-04-19 14:32:44,946 INFO o.e.HospitalMain [main] hospital.areas.Hospital@7c711375
+2022-04-19 14:32:44,952 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Tue Apr 19 14:32:44 ART 2022 with Mariano and it will cost $25000
+2022-04-19 14:32:44,964 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 1
+Name: Mariano
+Area of expertize: ONC
+
+2022-04-19 14:32:44,965 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 2
+Name: Andrew
+Area of expertize: DER
+
+2022-04-19 14:33:19,115 INFO o.e.HospitalMain [main] hospital.areas.Hospital@7c711375
+2022-04-19 14:33:19,123 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Tue Apr 19 14:33:19 ART 2022 with Mariano and it will cost $25000
+2022-04-19 14:33:19,140 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 1
+Name: Mariano
+Area of expertize: ONC
+
+2022-04-19 14:33:19,140 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 2
+Name: Andrew
+Area of expertize: DER
+
+2022-04-20 14:16:57,432 ERROR a.NumberOfWords [main] java.io.FileNotFoundException: C:\Users\PC\IdeaProjects\Test\src\resources (Acceso denegado)
+2022-04-20 14:18:48,054 ERROR a.NumberOfWords [main] java.io.FileNotFoundException: C:\Users\PC\IdeaProjects\Test\src\resources (Acceso denegado)
+2022-04-20 14:41:43,694 INFO o.e.HospitalMain [main] hospital.areas.Hospital@7c711375
+2022-04-20 14:41:43,701 INFO o.e.HospitalMain [main] false
+2022-04-20 14:41:43,714 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Wed Apr 20 14:41:43 ART 2022 with Mariano and it will cost $25000
+2022-04-20 14:41:43,719 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 1
+Name: Mariano
+Area of expertize: ONC
+
+2022-04-20 14:41:43,720 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 2
+Name: Andrew
+Area of expertize: ONC
+
+2022-04-20 14:45:08,409 INFO o.e.HospitalMain [main] hospital.areas.Hospital@7c711375
+2022-04-20 14:45:08,417 INFO o.e.HospitalMain [main] false
+2022-04-20 14:45:08,420 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Wed Apr 20 14:45:08 ART 2022 with Mariano and it will cost $25000
+2022-04-20 14:45:08,433 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 1
+Name: Mariano
+Area of expertize: ONC
+
+2022-04-20 14:45:08,434 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 2
+Name: Andrew
+Area of expertize: ONC
+

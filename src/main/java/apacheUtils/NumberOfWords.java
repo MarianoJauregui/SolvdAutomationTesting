@@ -7,7 +7,9 @@ import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.HashMap;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 
 public class NumberOfWords {
@@ -16,21 +18,21 @@ public class NumberOfWords {
     public static void main(String[] args) {
         String text = "";
         try {
-            text = FileUtils.readFileToString(new File("C:/Users/PC/IdeaProjects/Test/src/resources"));
+            text = FileUtils.readFileToString(new File("C:/Users/PC/IdeaProjects/Test/src/resources/SolvdText.txt"));
         } catch (IOException e) {
             LOGGER.error(e);
         }
+
         //Number of unique words
         String[] words = text.split("-");
-        HashMap<String, Integer> uniqueWord = new HashMap<>();
-        for (String word: words){
-            if(uniqueWord.containsKey(word)){
-                uniqueWord.put(word, uniqueWord.get(word)+1);
-            } else uniqueWord.put(word, 1);
-        }
+        Set<String> uniqueWord = new HashSet<>(Arrays.asList(words));
+        System.out.println("Number of unique words: " +uniqueWord.size());
+
+        //We create the file to count the words in the article
         try {
-            FileUtils.writeStringToFile(new File("C:/Users/PC/IdeaProjects//Test/src/resources/uniqueWords.txt"),
-                    "Unique words: " + uniqueWord.size() + "\n" + uniqueWord.toString());
+            FileUtils.writeStringToFile(new File(
+                    "C:/Users/PC/IdeaProjects//Test/src/resources/uniqueWords.txt"),
+                    uniqueWord.size() + " \n " +uniqueWord.size());
         } catch (IOException e) {
             LOGGER.error(e);
         }

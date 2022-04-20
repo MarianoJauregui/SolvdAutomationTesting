@@ -22,6 +22,7 @@ public abstract class Employee extends Person{
         this.salary = salary;
     }
 
+    //Lambda
     public void work(Workable work){
         work.work();
     }

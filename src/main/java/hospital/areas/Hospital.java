@@ -63,6 +63,7 @@ public class Hospital {
         this.nurseList = nurseList;
     }
 
+    //Methods to add and remove from ArrayList
     public void addDoctor(Doctor doctor){
         this.getDoctorList().add(doctor);
     }
