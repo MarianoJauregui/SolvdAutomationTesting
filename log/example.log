@@ -78,13 +78,13 @@ Credential: 123456789
 2022-04-09 09:36:20,775 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Sat Apr 09 09:36:20 ART 2022 with Mariano and it will cost $25000
 2022-04-09 09:36:20,790 INFO o.e.HospitalMain [main] null
 2022-04-09 09:37:20,352 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Sat Apr 09 09:37:20 ART 2022 with Mariano and it will cost $25000
-2022-04-09 09:37:20,361 INFO o.e.HospitalMain [main] customLinkedList.LinkedList@4310d43
+2022-04-09 09:37:20,361 INFO o.e.HospitalMain [main] customLinkedList.ListExample@4310d43
 2022-04-09 09:41:13,898 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Sat Apr 09 09:41:13 ART 2022 with Mariano and it will cost $25000
 2022-04-09 09:44:15,817 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Sat Apr 09 09:44:15 ART 2022 with Mariano and it will cost $25000
 2022-04-09 09:44:15,831 INFO o.e.HospitalMain [main] null
 2022-04-09 09:45:37,401 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Sat Apr 09 09:45:37 ART 2022 with Mariano and it will cost $25000
 2022-04-09 09:46:47,798 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Sat Apr 09 09:46:47 ART 2022 with Mariano and it will cost $25000
-2022-04-09 09:46:47,811 INFO o.e.HospitalMain [main] customLinkedList.LinkedList@55634720
+2022-04-09 09:46:47,811 INFO o.e.HospitalMain [main] customLinkedList.ListExample@55634720
 2022-04-09 09:48:11,648 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Sat Apr 09 09:48:11 ART 2022 with Mariano and it will cost $25000
 2022-04-12 13:40:59,623 ERROR a.NumberOfWords [main] java.io.FileNotFoundException: src\main\resources\SolvdText.txt (El sistema no puede encontrar la ruta especificada)
 2022-04-12 13:42:31,169 ERROR a.NumberOfWords [main] java.io.FileNotFoundException: C:\Users\PC\IdeaProjects\Test\src\resources (Acceso denegado)
@@ -208,6 +208,21 @@ Name: Mariano
 Area of expertize: ONC
 
 2022-04-20 14:45:08,434 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 2
+Name: Andrew
+Area of expertize: ONC
+
+2022-04-21 10:00:07,755 INFO o.e.HospitalMain [main] hospital.areas.Hospital@7c711375
+2022-04-21 10:00:07,770 INFO o.e.HospitalMain [main] false
+2022-04-21 10:00:07,790 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Thu Apr 21 10:00:07 ART 2022 with Mariano and it will cost $25000
+2022-04-21 10:00:07,800 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 1
+Name: Mariano
+Area of expertize: ONC
+
+2022-04-21 10:00:07,802 INFO o.e.HospitalMain [main] 
 Doctor info: 
 ID: 2
 Name: Andrew

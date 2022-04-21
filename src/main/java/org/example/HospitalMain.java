@@ -1,6 +1,5 @@
 package org.example;
 
-import customLinkedList.LinkedList;
 import hospital.areas.Hospital;
 import hospital.entities.Doctor;
 import hospital.entities.Nurse;
@@ -18,8 +17,8 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.Date;
 
-import static customLinkedList.LinkedList.add;
-import static customLinkedList.LinkedList.printLinkedList;
+import static customLinkedList.ListExample.add;
+import static customLinkedList.ListExample.printDoctorCollection;
 
 public class HospitalMain {
 
@@ -82,14 +81,7 @@ public class HospitalMain {
         }
 
         //Custom LinkedList
-        LinkedList list = new LinkedList();
-        //Insertion of data
-        list = add(list, 1);
-        list = add(list, 2);
-        list = add(list, 3);
-        list = add(list, 4);
-        list = add(list, 5);
-        printLinkedList(list);
+
 
         //GenericPrinter
         GenericInfoPrinter<Doctor> d1 = new GenericInfoPrinter<>(doctor1);
@@ -103,6 +95,9 @@ public class HospitalMain {
         doctorInfo.print();
         Printable nurseInfo = () -> LOGGER.info(doctor2.printInfo());
         nurseInfo.print();
+
+        add();
+        printDoctorCollection();
 
     }
 }

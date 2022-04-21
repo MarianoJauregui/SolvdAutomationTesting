@@ -8,6 +8,7 @@ public class Doctor<S> extends Person {
 
     private S salary;
     private AreaOfExpertize areaOfExpertize;
+    public String test = "Test";
 
     public S getSalary() {
         return salary;
