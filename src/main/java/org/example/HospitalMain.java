@@ -10,6 +10,7 @@ import hospital.exceptions.HealthInsuranceNotFound;
 import hospital.exceptions.MedicalRecordNotFound;
 import hospital.generics.GenericInfoPrinter;
 import hospital.lambda.Printable;
+import hospital.lambda.Workable;
 import hospital.services.Appointment;
 import hospital.services.AppointmentService;
 import org.apache.logging.log4j.LogManager;
@@ -17,8 +18,10 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.Date;
 
-import static customLinkedList.ListExample.add;
-import static customLinkedList.ListExample.printDoctorCollection;
+import static collections.ListExample.addDoctors;
+import static collections.ListExample.printDoctorCollection;
+import static collections.MapExample.addNurses;
+import static collections.MapExample.printNurseMapCollection;
 
 public class HospitalMain {
 
@@ -29,7 +32,8 @@ public class HospitalMain {
         final AppointmentService appointment = new AppointmentService();
 
         Hospital hospital1 = new Hospital("Blas Dubarry", "Mercedes", "Private");
-        LOGGER.info(hospital1.toString());
+        GenericInfoPrinter<Hospital> h1 = new GenericInfoPrinter<>(hospital1);
+        h1.print();
 
         //Creating doctors and nurses entities
         Doctor doctor1 = new Doctor("Mariano", 26, 1, AreaOfExpertize.ONC);
@@ -95,9 +99,15 @@ public class HospitalMain {
         doctorInfo.print();
         Printable nurseInfo = () -> LOGGER.info(doctor2.printInfo());
         nurseInfo.print();
+        Workable workDoctor = () -> LOGGER.info(doctor1.isWorking());
+        workDoctor.work();
 
-        add();
+        //Doctors List
+        addDoctors();
         printDoctorCollection();
 
+        //Nurse Map
+        addNurses();
+        printNurseMapCollection();
     }
 }

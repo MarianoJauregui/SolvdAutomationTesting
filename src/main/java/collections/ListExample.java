@@ -1,4 +1,4 @@
-package customLinkedList;
+package collections;
 
 import hospital.entities.Doctor;
 import hospital.enums.AreaOfExpertize;
@@ -15,7 +15,7 @@ public class ListExample {
 
         private static List<Doctor> employeesList = new ArrayList<>();
 
-        public static void add(){
+        public static void addDoctors(){
         employeesList.add(new Doctor<>("ListDoctor1", 26, 10, AreaOfExpertize.EMG));
         employeesList.add(new Doctor<>("ListDoctor2", 26, 21, AreaOfExpertize.DER));
         employeesList.add(new Doctor<>("ListDoctor3", 26, 32, AreaOfExpertize.ONC));

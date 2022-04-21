@@ -10,6 +10,16 @@ public class Doctor<S> extends Person {
     private AreaOfExpertize areaOfExpertize;
     public String test = "Test";
 
+    public boolean isWorking() {
+        return isWorking;
+    }
+
+    public void setWorking(boolean working) {
+        isWorking = working;
+    }
+
+    private boolean isWorking;
+
     public S getSalary() {
         return salary;
     }

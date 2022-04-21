@@ -29,7 +29,7 @@
             <AppenderRef ref="LogToConsole"/>
         </Logger>
 
-        <Logger name="org.example" level="error" additivity="false">
+        <Logger name="org.examplet" level="error" additivity="false">
             <AppenderRef ref="LogToConsole"/>
         </Logger>
 
