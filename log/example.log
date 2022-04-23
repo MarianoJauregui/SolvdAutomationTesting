@@ -228,3 +228,18 @@ ID: 2
 Name: Andrew
 Area of expertize: ONC
 
+2022-04-23 09:25:14,308 INFO o.e.HospitalMain [main] false
+2022-04-23 09:25:14,330 INFO o.e.HospitalMain [main] Hello, Martin. Your appointment is on Sat Apr 23 09:25:14 ART 2022 with Mariano and it will cost $25000
+2022-04-23 09:25:14,340 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 1
+Name: Mariano
+Area of expertize: ONC
+
+2022-04-23 09:25:14,341 INFO o.e.HospitalMain [main] 
+Doctor info: 
+ID: 2
+Name: Andrew
+Area of expertize: ONC
+
+2022-04-23 09:25:14,342 INFO o.e.HospitalMain [main] false

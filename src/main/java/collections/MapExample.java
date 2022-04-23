@@ -4,6 +4,7 @@ import hospital.entities.Nurse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,5 +24,7 @@ public class MapExample {
     public static void printNurseMapCollection() {
         nurseMap.forEach((k,v) -> LOGGER.info("Nurse info: " + k + " \n" + "Id:" + v));
     }
+
+
 
 }

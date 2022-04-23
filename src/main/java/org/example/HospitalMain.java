@@ -109,5 +109,7 @@ public class HospitalMain {
         //Nurse Map
         addNurses();
         printNurseMapCollection();
+
+
     }
 }

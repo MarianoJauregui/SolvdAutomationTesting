@@ -1,6 +1,7 @@
 package collections;
 
 import hospital.entities.Doctor;
+import hospital.entities.Nurse;
 import hospital.enums.AreaOfExpertize;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -25,5 +26,6 @@ public class ListExample {
     public static void printDoctorCollection(){
         employeesList.forEach(x -> LOGGER.info(x.printInfo()));
     }
+
 }
 
