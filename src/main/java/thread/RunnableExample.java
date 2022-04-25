@@ -2,8 +2,12 @@ package thread;
 
 public class RunnableExample {
     public static void main(String[] args) {
-        Thread threadExample = new Thread();
-        threadExample.start();
+
+        for (int i=0; i<=3; i++){
+            ThreadExample myUselessThread = new ThreadExample(i);
+            Thread myRealThread = new Thread(myUselessThread);
+            myRealThread.start();
+        }
 
         Runnable runnable = () -> System.out.println("Method run using lambda");
 
