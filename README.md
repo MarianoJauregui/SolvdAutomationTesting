@@ -10,7 +10,7 @@ Class 3: Abstract and Inheritance. Methods from the Object class.
 
 Class 4: Abstract vs Interface
 
-Class 5: Exceptions – the stack and the hip memory- Boxing and Unboxing operation. Logger.
+Class 5: Exceptions – the stack and the heap memory locations- Boxing and Unboxing operation. Logger.
 
 Class 6: Generics and Collections – Map
 
